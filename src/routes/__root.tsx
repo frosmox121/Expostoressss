@@ -95,11 +95,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         property: "og:image",
-        content: "/src/assets/images/logo_fixed_1779202163805.png",
+        content: "/logo_new.png",
       },
       {
         name: "twitter:image",
-        content: "/src/assets/images/logo_fixed_1779202163805.png",
+        content: "/logo_new.png",
       },
     ],
     links: [
@@ -117,11 +117,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
         <HeadContent />
       </head>
-      <body suppressHydrationWarning>
+      <body>
         {children}
         <Scripts />
       </body>

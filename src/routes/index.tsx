@@ -22,7 +22,7 @@ import {
   PackageOpen,
   LayoutGrid,
 } from "lucide-react";
-import logo from "@/assets/images/logo_fixed_1779202163805.png";
+import logo from "@/assets/images/logo_new_1779196556638.png";
 import { PRODUCTS } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 
@@ -156,12 +156,9 @@ function Home() {
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#top" className="text-sm font-bold hover:text-gold transition-colors">
-              Inicio
-            </a>
-            <a href="#catalogo" className="text-sm font-bold hover:text-gold transition-colors">
-              Catálogo
-            </a>
+            <a href="#top" className="text-sm font-bold hover:text-gold transition-colors">Inicio</a>
+            <a href="#catalogo" className="text-sm font-bold hover:text-gold transition-colors">Catálogo</a>
+            <a href="#faq" className="text-sm font-bold hover:text-gold transition-colors">Preguntas</a>
           </nav>
 
           <a
@@ -224,11 +221,52 @@ function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section id="faq" className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
+        <div className="text-center mb-10">
+          <p className="text-xs tracking-[0.3em] text-gold font-semibold">AYUDA</p>
+          <h2 className="text-3xl sm:text-4xl font-black mt-2">Preguntas Frecuentes</h2>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            {
+              q: "¿Cómo realizo una compra?",
+              a: "Es simple: elegís el producto en el catálogo, hacés clic en 'Consultar y lo quiero' y te redirige a nuestro WhatsApp para coordinar el pago y envío.",
+            },
+            {
+              q: "¿Hacen envíos a todo el país?",
+              a: "Sí, realizamos envíos a toda la Argentina a través de Correo Argentino u OCA. También podés retirar en nuestro punto de entrega en Lanús.",
+            },
+            {
+              q: "¿Cuáles son los medios de pago?",
+              a: "Aceptamos Efectivo (con descuento), Transferencia Bancaria, Mercado Pago (dinero en cuenta) y USDT (Cripto).",
+            },
+            {
+              q: "¿Los productos tienen garantía?",
+              a: "Sí, todos nuestros productos cuentan con garantía oficial de EXPOSTORE. Los iPhones son originales y sellados con garantía Apple.",
+            },
+            {
+              q: "¿Tienen local físico?",
+              a: "Trabajamos como showroom y punto de retiro en Lanús, Buenos Aires. Podés coordinar tu visita para retirar tu compra.",
+            },
+            {
+              q: "¿Venden por mayor?",
+              a: "Sí, contamos con precios especiales para revendedores en perfumes y cuidado capilar (Karssell). Consultanos por los packs mayoristas.",
+            },
+          ].map((faq, i) => (
+            <div key={i} className="p-5 rounded-2xl border border-border bg-card/40 hover:border-gold/40 transition">
+              <h3 className="font-bold text-gold text-sm sm:text-base mb-2">{faq.q}</h3>
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Categories */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
         <div className="flex items-end justify-between mb-8 gap-4">
           <div>
-            <p className="text-xs tracking-[0.3em] text-gold font-semibold uppercase">CATEGORÍAS</p>
+            <p className="text-xs tracking-[0.3em] text-gold font-semibold">CATEGORÍAS</p>
             <h2 className="text-3xl sm:text-4xl font-black mt-2">Elegí tu rubro</h2>
           </div>
         </div>
@@ -298,7 +336,7 @@ function Home() {
       </section>
 
       {/* Catalog / Grid */}
-      <section id="catalogo" className="mx-auto max-w-7xl px-4 sm:px-6 pb-20 pt-10">
+      <section id="catalogo" className="mx-auto max-w-7xl px-4 sm:px-6 pb-20">
         <div className="flex items-end justify-between mb-8 gap-4">
           <div>
             <p className="text-xs tracking-[0.3em] text-gold font-semibold uppercase">
@@ -347,57 +385,6 @@ function Home() {
             </div>
           </div>
         )}
-      </section>
-
-      {/* FAQ Section */}
-      <section id="faq" className="mx-auto max-w-7xl px-4 sm:px-6 py-20 border-t border-border/60">
-        <div className="text-center mb-10">
-          <p className="text-xs tracking-[0.3em] text-gold font-semibold uppercase">
-            AYUDA & SOPORTE
-          </p>
-          <h2 className="text-3xl sm:text-4xl font-black mt-2">Preguntas Frecuentes</h2>
-          <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-            Despejá tus dudas antes de comprar. Si no encontrás lo que buscás, contactanos.
-          </p>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            {
-              q: "¿Cómo realizo una compra?",
-              a: "Es simple: elegís el producto en el catálogo, hacés clic en 'Consultar y lo quiero' y te redirige a nuestro WhatsApp para coordinar el pago y envío.",
-            },
-            {
-              q: "¿Hacen envíos a todo el país?",
-              a: "Sí, realizamos envíos a toda la Argentina a través de Correo Argentino u OCA. También podés retirar en nuestro punto de entrega en Lanús.",
-            },
-            {
-              q: "¿Cuáles son los medios de pago?",
-              a: "Aceptamos Efectivo (con descuento), Transferencia Bancaria, Mercado Pago (dinero en cuenta) y USDT (Cripto).",
-            },
-            {
-              q: "¿Los productos tienen garantía?",
-              a: "Sí, todos nuestros productos cuentan con garantía oficial de EXPOSTORE. Los iPhones son originales y sellados con garantía Apple.",
-            },
-            {
-              q: "¿Tienen local físico?",
-              a: "Trabajamos como showroom y punto de retiro en Lanús, Buenos Aires. Podés coordinar tu visita para retirar tu compra.",
-            },
-            {
-              q: "¿Venden por mayor?",
-              a: "Sí, contamos con precios especiales para revendedores en perfumes y cuidado capilar (Karssell). Consultanos por los packs mayoristas.",
-            },
-          ].map((faq, i) => (
-            <div
-              key={i}
-              className="p-6 rounded-3xl border border-border bg-card/40 hover:border-gold/40 transition group hover:shadow-gold/5"
-            >
-              <h3 className="font-bold text-gold text-base mb-3 group-hover:translate-x-1 transition-transform">
-                {faq.q}
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed italic">"{faq.a}"</p>
-            </div>
-          ))}
-        </div>
       </section>
 
       {/* Why Us */}
