@@ -1,34 +1,30 @@
 import { Category } from "@/routes/index";
 
 // Original Images
-const pCombo = "/assets/images/p_combo_1779224267913.png";
+import pCombo from "../assets/images/p_combo_1779224267913.png";
 
 // Original New Images
-const pBadeOud = "/assets/images/p_bade_oud_1779196572050.png";
-const pOilKarseell = "/assets/images/p_oil_karseell_1779196585542.png";
-const pCremaKarseell =
-  "/assets/images/p_crema_karseell_maca_essence_repair_collagen_hair_mask_500g_1779196627715.png";
-const pWolf =
-  "/assets/images/p_wolf_rayhaan_perfume_bottle_with_embossed_wolf_head_1779196643235.png";
-const pKiss =
-  "/assets/images/p_kiss_rayhaan_perfume_bottle_with_gold_lattice_pattern_1779196659325.png";
-const pSabahAlWard =
-  "/assets/images/p_sabah_al_ward_al_wataniah_perfume_bottle_with_crystal_cap_1779196674639.png";
-const pVsBody = "/assets/images/p_vs_body_1779225584917.png";
-const pKhamrah = "/assets/images/p_khamrah_1779225602887.png";
-const pOdysseyCandee = "/assets/images/p_odyssey_candee_1779225620657.png";
-const pOdysseyMarshmallow = "/assets/images/p_odyssey_marshmallow_1779225634520.png";
-const pElixirChic = "/assets/images/p_elixir_chic_1779225649973.png";
+import pBadeOud from "../assets/images/p_bade_oud_1779196572050.png";
+import pOilKarseell from "../assets/images/p_oil_karseell_1779196585542.png";
+import pCremaKarseell from "../assets/images/p_crema_karseell_maca_essence_repair_collagen_hair_mask_500g_1779196627715.png";
+import pWolf from "../assets/images/p_wolf_rayhaan_perfume_bottle_with_embossed_wolf_head_1779196643235.png";
+import pKiss from "../assets/images/p_kiss_rayhaan_perfume_bottle_with_gold_lattice_pattern_1779196659325.png";
+import pSabahAlWard from "../assets/images/p_sabah_al_ward_al_wataniah_perfume_bottle_with_crystal_cap_1779196674639.png";
+import pVsBody from "../assets/images/p_vs_body_1779225584917.png";
+import pKhamrah from "../assets/images/p_khamrah_1779225602887.png";
+import pOdysseyCandee from "../assets/images/p_odyssey_candee_1779225620657.png";
+import pOdysseyMarshmallow from "../assets/images/p_odyssey_marshmallow_1779225634520.png";
+import pElixirChic from "../assets/images/p_elixir_chic_1779225649973.png";
 
 // Brand New Generated Images
-const pAmberOudFixed = "/assets/images/p_amber_oud_fixed_1779231445442.png";
-const pFakharTrio = "/assets/images/p_lattafa_fakhar_trio_1779231469493.png";
-const pYaraQuartet = "/assets/images/p_lattafa_yara_quartet_1779231490550.png";
-const pAsadAll = "/assets/images/p_lattafa_asad_all_1779231515312.png";
-const pKhamrahSeries = "/assets/images/p_lattafa_khamrah_series_1779231538313.png";
-const pEclaire = "/assets/images/p_lattafa_eclaire_1779231563374.png";
-const pIphonesLineup = "/assets/images/p_iphones_lineup_1779231584124.png";
-const pArgShirt = "/assets/images/p_arg_shirt_1779237545917.png";
+import pAmberOudFixed from "../assets/images/p_amber_oud_fixed_1779231445442.png";
+import pFakharTrio from "../assets/images/p_lattafa_fakhar_trio_1779231469493.png";
+import pYaraQuartet from "../assets/images/p_lattafa_yara_quartet_1779231490550.png";
+import pAsadAll from "../assets/images/p_lattafa_asad_all_1779231515312.png";
+import pKhamrahSeries from "../assets/images/p_lattafa_khamrah_series_1779231538313.png";
+import pEclaire from "../assets/images/p_lattafa_eclaire_1779231563374.png";
+import pIphonesLineup from "../assets/images/p_iphones_lineup_1779231584124.png";
+import pArgShirt from "../assets/images/p_arg_shirt_1779237545917.png";
 
 export interface ProductOption {
   spec: string;

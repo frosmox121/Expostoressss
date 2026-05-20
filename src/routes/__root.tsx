@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import ogImage from "../assets/logo_fixed_1779202163805_1779229384372.png";
 
 function NotFoundComponent() {
   return (
@@ -95,11 +96,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         property: "og:image",
-        content: "/src/assets/images/logo_fixed_1779202163805_1779229384372.png",
+        content: ogImage,
       },
       {
         name: "twitter:image",
-        content: "/src/assets/images/logo_fixed_1779202163805_1779229384372.png",
+        content: ogImage,
       },
     ],
     links: [

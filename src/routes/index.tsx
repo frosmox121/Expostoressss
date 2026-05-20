@@ -21,7 +21,7 @@ import {
   LayoutGrid,
   Shirt,
 } from "lucide-react";
-const logo = "/assets/logo_fixed_1779202163805_1779229384372.png";
+import logo from "../assets/logo_fixed_1779202163805_1779229384372.png";
 import { PRODUCTS } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { motion, AnimatePresence } from "motion/react";
