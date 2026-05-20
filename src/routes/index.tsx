@@ -19,8 +19,9 @@ import {
   CheckCircle2,
   PackageOpen,
   LayoutGrid,
+  Shirt,
 } from "lucide-react";
-import logo from "@/assets/images/logo_fixed_1779202163805_1779229384372.png";
+const logo = "/assets/logo_fixed_1779202163805_1779229384372.png";
 import { PRODUCTS } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { motion, AnimatePresence } from "motion/react";
@@ -64,12 +65,14 @@ export type Category =
   | "iphone"
   | "karssell"
   | "electro"
-  | "combos";
+  | "combos"
+  | "indumentaria";
 
 const MAIN_CATEGORIES: { id: Category; label: string; sub: string; Icon: typeof Sparkles }[] = [
   { id: "perfumes", label: "Perfumes", sub: "Colección Árabe & Designer", Icon: Sparkles },
   { id: "iphone", label: "iPhones", sub: "Apple Original", Icon: Smartphone },
   { id: "karssell", label: "Karssell", sub: "Cuidado capilar", Icon: Scissors },
+  { id: "indumentaria", label: "Indumentaria", sub: "Camisetas oficiales", Icon: Shirt },
   { id: "electro", label: "Electro", sub: "Hogar y más", Icon: Flame },
   { id: "combos", label: "Combos", sub: "Ahorro total", Icon: Package },
 ];
